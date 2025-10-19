@@ -23,14 +23,12 @@ This project implements a real-time face recognition system for logging employee
    
 2. Create and activate a virtual environment:
 
-``bash
-python -m venv venv
-venv\Scripts\activate       # Windows
-source venv/bin/activate    # macOS/Linux
+- python -m venv venv
+- venv\Scripts\activate       # Windows
+- source venv/bin/activate    # macOS/Linux
 
 3.Install dependencies:
 
-'''bash
 pip install -r requirements.txt
 
 4. Download the YOLOv8 model (yolov8n.pt) and place it in the project root.
@@ -42,7 +40,6 @@ pip install -r requirements.txt
 ## Usage
 Generate face encodings:
 
-``bash
 python encodegenerator.py
 
 ---
@@ -53,9 +50,10 @@ python main.py
 
 ## Controls:
 
-Press f to toggle fullscreen.
-Press n to return to normal window.
-Press q to quit.
+- Press f to toggle fullscreen.
+- Press n to return to normal window.
+- Press q to quit.
+
 
 ---
 
@@ -75,13 +73,13 @@ face_recognition-main/
 
 ## Dependencies
 
-Python 3.9+
-OpenCV (cv2)
-face_recognition
-cvzone
-numpy
-ultralytics (YOLOv8)
-SQLite3 (built-in)
+- Python 3.9+
+- OpenCV (cv2)
+- face_recognition
+- cvzone
+- numpy
+- ultralytics (YOLOv8)
+- SQLite3 (built-in)
 
 ---
 
@@ -91,6 +89,6 @@ This project is licensed under the MIT License. See LICENSE for details.
 ---
 
 ## Acknowledgements
-YOLOv8 for real-time object detection.
-face_recognition for face encoding and matching.
-cvzone for bounding box visualization and UI enhancements.
+- YOLOv8 for real-time object detection.
+- face_recognition for face encoding and matching.
+- cvzone for bounding box visualization and UI enhancements.
