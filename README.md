@@ -59,15 +59,15 @@ python main.py
 
 ## Folder Structure
 
-face_recognition-main/
-│
-├─ images/               # Employee face images
-├─ encodegenerator.py    # Script to encode faces
-├─ main.py               # Main face recognition script
-├─ encodefile.p          # Encoded face data (generated)
-├─ yolov8n.pt            # YOLOv8 face detection model
-├─ emp_logs.db           # SQLite database for logs
-├─ requirements.txt      # Python dependencies
+- face_recognition-main/
+- │
+- ├─ images/               # Employee face images
+- ├─ encodegenerator.py    # Script to encode faces
+- ├─ main.py               # Main face recognition script
+- ├─ encodefile.p          # Encoded face data (generated)
+- ├─ yolov8n.pt            # YOLOv8 face detection model
+- ├─ emp_logs.db           # SQLite database for logs
+- ├─ requirements.txt      # Python dependencies
 
 ---
 
