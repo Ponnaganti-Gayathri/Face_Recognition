@@ -17,47 +17,39 @@ This project implements a real-time face recognition system for logging employee
 ## Installation
 
 1. Clone the repository:
-   ```bash
    git clone <your-repo-url>
    cd face_recognition-main
-Create and activate a virtual environment:
+2.Create and activate a virtual environment:
 
-bash
-Copy code
 python -m venv venv
 venv\Scripts\activate       # Windows
 source venv/bin/activate    # macOS/Linux
-Install dependencies:
 
-bash
-Copy code
+3.Install dependencies:
+
 pip install -r requirements.txt
-Download the YOLOv8 model (yolov8n.pt) and place it in the project root.
 
-Create an images folder and add employee face images (name of file = employee ID).
+4.Download the YOLOv8 model (yolov8n.pt) and place it in the project root.
 
-Usage
-Generate face encodings:
+5.Create an images folder and add employee face images (name of file = employee ID).
 
-bash
-Copy code
+##Usage
+##Generate face encodings:
+
 python encodegenerator.py
-Run the main program:
 
-bash
-Copy code
+##Run the main program:
+
 python main.py
-Controls:
+
+##Controls:
 
 Press f to toggle fullscreen.
-
 Press n to return to normal window.
-
 Press q to quit.
 
-Folder Structure
-graphql
-Copy code
+##Folder Structure
+
 face_recognition-main/
 │
 ├─ images/               # Employee face images
@@ -67,36 +59,20 @@ face_recognition-main/
 ├─ yolov8n.pt            # YOLOv8 face detection model
 ├─ emp_logs.db           # SQLite database for logs
 ├─ requirements.txt      # Python dependencies
-Dependencies
+
+##Dependencies
 Python 3.9+
-
 OpenCV (cv2)
-
 face_recognition
-
 cvzone
-
 numpy
-
 ultralytics (YOLOv8)
-
 SQLite3 (built-in)
 
-License
+##License
 This project is licensed under the MIT License. See LICENSE for details.
 
-Acknowledgements
+##Acknowledgements
 YOLOv8 for real-time object detection.
-
 face_recognition for face encoding and matching.
-
 cvzone for bounding box visualization and UI enhancements.
-
-yaml
-Copy code
-
----
-
-If you want, I can also **write a `requirements.txt`** file for your project so anyone can install all dependencies with a single command. This is usually included in GitHub repos.  
-
-Do you want me to do that next?
