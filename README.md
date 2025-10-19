@@ -16,51 +16,56 @@ This project implements a real-time face recognition system for logging employee
 
 ## Installation
 
-1. Clone the repository:
-   git clone <your-repo-url>
-   cd face_recognition-main
-2.Create and activate a virtual environment:
+Clone the repository:
+git clone <your-repo-url>
+cd face_recognition-main
 
+Create and activate a virtual environment:
 python -m venv venv
-venv\Scripts\activate       # Windows
-source venv/bin/activate    # macOS/Linux
+Windows: venv\Scripts\activate
+macOS/Linux: source venv/bin/activate
 
-3.Install dependencies:
-
+Install dependencies:
 pip install -r requirements.txt
 
-4.Download the YOLOv8 model (yolov8n.pt) and place it in the project root.
+Download YOLOv8 model:
+Download yolov8n.pt and place it in the project root.
 
-5.Create an images folder and add employee face images (name of file = employee ID).
+Add employee images:
+Create an images folder and add employee face images. Use the employee name or ID as the image filename.
 
-##Usage
-##Generate face encodings:
+Usage:
 
+Generate face encodings:
 python encodegenerator.py
 
-##Run the main program:
-
+Run the main program:
 python main.py
 
-##Controls:
-
+Controls:
 Press f to toggle fullscreen.
 Press n to return to normal window.
 Press q to quit.
 
-##Folder Structure
+Folder Structure:
 
 face_recognition-main/
-│
-├─ images/               # Employee face images
-├─ encodegenerator.py    # Script to encode faces
-├─ main.py               # Main face recognition script
-├─ encodefile.p          # Encoded face data (generated)
-├─ yolov8n.pt            # YOLOv8 face detection model
-├─ emp_logs.db           # SQLite database for logs
-├─ requirements.txt      # Python dependencies
 
-##Dependencies
+images/ (Employee face images)
+
+encodegenerator.py (Script to encode faces)
+
+main.py (Main face recognition script)
+
+encodefile.p (Encoded face data, generated)
+
+yolov8n.pt (YOLOv8 face detection model)
+
+emp_logs.db (SQLite database for logs)
+
+requirements.txt (Python dependencies)
+
+Dependencies:
 Python 3.9+
 OpenCV (cv2)
 face_recognition
@@ -69,10 +74,9 @@ numpy
 ultralytics (YOLOv8)
 SQLite3 (built-in)
 
-##License
+License:
 This project is licensed under the MIT License. See LICENSE for details.
 
-##Acknowledgements
+Acknowledgements:
 YOLOv8 for real-time object detection.
-face_recognition for face encoding and matching.
-cvzone for bounding box visualization and UI enhancements.
+face_recognition for face encoding and matching_
